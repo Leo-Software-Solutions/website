@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0b1220;
+  --color-brand-panel: #0f1b2e;
+  --color-brand-line: #1b2b46;
+  --color-brand-text: #e6edf7;
+  --color-brand-muted: #a9b6cf;
+  --color-brand-blue: #49a6ff;
+  --color-brand-gold: #f4c14b;
+  --color-brand-cyan: #7ce7ff;
+
+  --background-image-brand-radial: radial-gradient(
+      1200px circle at 20% 0%,
+      rgba(73, 166, 255, 0.22),
+      transparent 55%
+    ),
+    radial-gradient(
+      900px circle at 80% 20%,
+      rgba(244, 193, 75, 0.18),
+      transparent 50%
+    );
+
+  --shadow-glow: 0 0 0 1px rgba(73, 166, 255, 0.2),
+    0 12px 40px rgba(0, 0, 0, 0.55);
+  --shadow-gold: 0 0 0 1px rgba(244, 193, 75, 0.18),
+    0 12px 40px rgba(0, 0, 0, 0.55);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-brand-bg text-brand-text antialiased;
+}
+
+::selection {
+  background: rgba(244, 193, 75, 0.28);
+}
