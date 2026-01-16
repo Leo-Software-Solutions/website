@@ -7,7 +7,8 @@
       // Single Page Apps for GitHub Pages
       // Stores the current path and redirects to index.html
       sessionStorage.redirect = location.href;
-      location.replace(location.pathname.split('/').slice(0, 2).join('/') + '/');
+      // Redirect to /website/ base path
+      location.replace('/website/');
     </script>
   </head>
   <body>

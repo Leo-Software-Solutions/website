@@ -6,6 +6,9 @@ import { Services } from "./pages/Services";
 import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
 
+// Use /website for GitHub Pages, / for local development
+const basename = import.meta.env.PROD ? "/website" : "/";
+
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-brand-radial">
@@ -18,7 +21,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
