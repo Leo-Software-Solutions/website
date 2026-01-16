@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Home } from "./pages/Home";
@@ -18,7 +18,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -27,6 +27,6 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
