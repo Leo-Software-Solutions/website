@@ -10,7 +10,8 @@
   --color-brand-gold: #f4c14b;
   --color-brand-cyan: #7ce7ff;
 
-  --background-image-brand-radial: radial-gradient(
+  --background-image-brand-radial:
+    radial-gradient(
       1200px circle at 20% 0%,
       rgba(73, 166, 255, 0.22),
       transparent 55%
@@ -21,10 +22,10 @@
       transparent 50%
     );
 
-  --shadow-glow: 0 0 0 1px rgba(73, 166, 255, 0.2),
-    0 12px 40px rgba(0, 0, 0, 0.55);
-  --shadow-gold: 0 0 0 1px rgba(244, 193, 75, 0.18),
-    0 12px 40px rgba(0, 0, 0, 0.55);
+  --shadow-glow:
+    0 0 0 1px rgba(73, 166, 255, 0.2), 0 12px 40px rgba(0, 0, 0, 0.55);
+  --shadow-gold:
+    0 0 0 1px rgba(244, 193, 75, 0.18), 0 12px 40px rgba(0, 0, 0, 0.55);
 }
 
 :root {
